@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Outer loop for rows
+        for (let i = 1; i <= 5; i++) {
+            // Inner loop for printing the numbers in decreasing order
+            for (let j = i; j >= 1; j--) {
+                process.stdout.write(j + " ");  // Printing the number without a newline
+            }
+            console.log(); // Move to the next line after each row
+        }
+
+        console.log()
+
+        // Outer loop for rows
+        for (let i = 5; i >= 1; i--) {
+            // Inner loop for printing the numbers from i to 5
+            for (let j = i; j <= 5; j++) {
+                process.stdout.write(j + " ");  // Printing the number without a newline
+            }
+            console.log(); // Move to the next line after each row
+        }
+
+
+        console.log()
+
+        // Outer loop for rows
+        for (let i = 5; i >= 1; i--) {
+            // Inner loop for printing the number i, i times
+            for (let j = 1; j <= 6 - i; j++) {
+                process.stdout.write(i + " ");  // Printing the number without a newline
+            }
+            console.log(); // Move to the next line after each row
+        }
+
+
+        console.log()
+
+
+        // Outer loop for rows
+        for (let i = 5; i >= 1; i--) {
+            // Inner loop for printing the alternating 1s and 0s
+            for (let j = 1; j <= i; j++) {
+                // Print 1 if the position is even (starting from 1), else print 0
+                process.stdout.write((j % 2 === 1 ? 1 : 0) + " ");
+            }
+            console.log(); // Move to the next line after each row
+        }
+
+
+        console.log()
+
+
+        // Outer loop for rows
+        for (let i = 5; i >= 1; i--) {
+            // Inner loop for printing the numbers from i down to 1
+            for (let j = i; j >= 1; j--) {
+                process.stdout.write(j + " ");  // Printing the number without a newline
+            }
+            console.log(); // Move to the next line after each row
+        }
+
+        console.log()
+
+        // Outer loop for rows
+        for (let i = 5; i >= 1; i--) {
+            // Inner loop for printing numbers starting from 5 and decreasing
+            for (let j = 5; j >= 6 - i; j--) {
+                process.stdout.write(j + " ");  // Printing the number without a newline
+            }
+            console.log(); // Move to the next line after each row
+        }
+
+
+    </script>
+</body>
+
+</html>
